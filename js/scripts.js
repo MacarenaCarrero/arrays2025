@@ -50,9 +50,7 @@ if (
 
 // 4 Macarena necesita generar un identificador único para cada usuario. Recibe un array con nombre y apellido, (por ejemplo: ['Enrique Sofresco', 'Esther Colero', 'Leandro Gado']) y debe imprimir las dos primeras letras de cada nombre y de cada apellido en mayúsculas, seguidas de un número aleatorio entre 10 y 99.
 
-const generateUserName = names => {
-  const firstname = names[0].substring(0, names[0].indexOf(' '));
-};
+//RESPUESTA EN FOTO
 
 // const nameUser = () => {
 //   const names = ['Enrique', 'Esther', 'Leandro'];
@@ -75,7 +73,7 @@ const generateUserName = names => {
 // 5 Abby encontró una caja fuerte con un código de acceso en un array de cuatro dígitos, por ejemplo: [1, 5, 3, 8]. Si la suma del primer y el último número es par, imprimirá "Acceso concedido", si no, "Acceso denegado".
 
 const secretCode = code => {
-  if ((code[0] + code[3]) % 2 === 0) {
+  if ((code[0] + code[code.length - 1]) % 2 === 0) {
     console.log('Acceso concedido.');
   } else {
     console.log('Acceso denegado.');
