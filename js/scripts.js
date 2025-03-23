@@ -30,7 +30,7 @@ catalog('Falda');
 
 // 3 Sabrina está revisando su lista de correos electrónicos para enviar promociones, por ejemplo: ["cliente1@gmail.com", "cliente2@hotmail.com", "cliente3@gmail.com"]. Quiere asegurarse de que al menos uno de los correos pertenece a Gmail. Si lo encuentra, debe mostrar "Correo de Gmail encontrado". Si no, "No hay correos de Gmail".
 
-const listEmails = domain => {};
+const listEmails = () => {};
 
 const emails = [
   'cliente1@gmail.com',
@@ -47,6 +47,8 @@ if (
 } else {
   console.log('No hay correo Gmail.');
 }
+
+listEmails();
 
 // 4 Macarena necesita generar un identificador único para cada usuario. Recibe un array con nombre y apellido, (por ejemplo: ['Enrique Sofresco', 'Esther Colero', 'Leandro Gado']) y debe imprimir las dos primeras letras de cada nombre y de cada apellido en mayúsculas, seguidas de un número aleatorio entre 10 y 99.
 
@@ -321,14 +323,14 @@ playersChampions('Diego');
 
 // 20 Abby está recibiendo señales de radio con mensajes en espera. Ha procesado el mensaje más antiguo de la lista: ["Atención, infectados cerca", "Necesitamos refuerzos", "Zona despejada"] y ha recibido uno nuevo: "Solicitamos medicinas". Luego, debe mostrar los mensajes uno por uno en console.log independientes.
 
-const messageRadio = message => {
-  const messages = [
-    'Atención, infectados cerca',
-    'Necesitamos refuerzos',
-    'Zona despejada'
-  ];
-  messages.pop(message);
-  message.push(message);
-  console.log(messages);
-};
-messageRadio('Solicitamos medicinas');
+// const messageRadio = message => {
+//   const messages = [
+//     'Atención, infectados cerca',
+//     'Necesitamos refuerzos',
+//     'Zona despejada'
+//   ];
+//   messages.pop(message);
+//   message.push(message);
+//   console.log(messages);
+// };
+// messageRadio('Solicitamos medicinas');
