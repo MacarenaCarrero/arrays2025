@@ -240,10 +240,12 @@ addClients('Lucia');
 // 12 Bego está revisando el stock de su tienda. Un producto aleatorio ya no está disponible y debe ser eliminado de la lista: ["Pan", "Leche", "Huevos"]. Después, debe mostrar cuántos productos quedan.
 
 const stockShop = product => {
+  // FOTO
   const products = ['Pan', 'Leche', 'Huevos'];
 
   let removeProduct = Math.floor(Math.random(products.length));
 };
+stockShop();
 
 // 13 Sabrina está registrando pedidos en un restaurante. Un nuevo pedido, "Pizza", ha sido añadido en primer lugar a la lista de pedidos: ["Hamburguesa", "Ensalada"]. Luego, debe imprimir el primer pedido en la lista.
 
@@ -284,7 +286,7 @@ const waitingList = clientVip => {
   const clients = ['Ana ', 'Luis ', 'Elena'];
 
   const removeClient = clients.unshift(clientVip);
-  let finalListClient = clients[clients.length - 1];
+  const finalListClient = clients[clients.length - 1];
   console.log(`${clients}. Y el ultimo de la lista es: ${finalListClient}.`);
 };
 waitingList('Fernando ');
