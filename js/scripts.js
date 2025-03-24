@@ -325,7 +325,7 @@ playersChampions('Diego');
 
 // 20 Abby está recibiendo señales de radio con mensajes en espera. Ha procesado el mensaje más antiguo de la lista: ["Atención, infectados cerca", "Necesitamos refuerzos", "Zona despejada"] y ha recibido uno nuevo: "Solicitamos medicinas". Luego, debe mostrar los mensajes uno por uno en console.log independientes.
 
-// const messageRadio = message => {
+// const messageRadio = message => {  FOTO
 //   const messages = [
 //     'Atención, infectados cerca',
 //     'Necesitamos refuerzos',
